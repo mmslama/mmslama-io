@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html>
-	<head> Mikolas' Portfolio</head>
+	<head>
+		<title>Mikolas' Portfolio</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		
+		<style>
+			section:before{
+				height: 54px;
+				content: "";
+				display: block;
+			}
+			section{
+				min-height: 100vh;
+			}
+			
+			#section-showcase{
+				background-image: url(./images/inspiration_HD.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			html{
+				scroll-behavior:smooth;
+			}
+		</style>
+	</head>
 	<body>
-		<nav id="top-navbar">
-			<a href="#section-showcase"><strong> Collected Works </strong></a>
-			<ul>
-				<li> <a hred="#section-home"> Home </a> </li>
-				<li> <a hred="#section-about"> About </a> </li>
-				<li> <a hred="#section-projects"> Projects </a> </li>
-				<li> <a hred="#section-blog"> Blog </a> </li>
-				<li> <a hred="#section-contact"> Contact </a> </li>
+		<nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
+			<a class='navbar-brand' href="#section-showcase"><strong> Collected Works </strong></a>
+			
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+		<div class='collapse navbar-collapse' id='menu'>
+			<ul class=' nav navbar-nav ml-auto'>
+				<li class='nav-item'>
+					<a class='nav-link' href="#section-home"> Home </a> 
+				</li>
+				<li class='nav-item'>
+					<a class='nav-link' href="#section-about"> About </a>
+				</li>
+				<li class='nav-item'>
+					<a class='nav-link' href="#section-projects"> Projects </a>
+				</li>
+				<li class='nav-item'>
+					<a class='nav-link' href="#section-blog"> Blog </a>
+				</li>
+				<li class='nav-item'>
+					<a class='nav-link' href="#section-contact"> Contact </a>
+				</li>
 			</ul>
+		</div>
 		</nav>
-		<section id="section-showcase">
-			<div>
-				<h1> Mikolas' Portfolio</h1>
-				<p> A complete collection of my work.</p>
+		<section id="section-showcase" class='jumbotron d-flex align-items-center mb-0'>
+			<div class='container text-center text-light'>
+				<h1 class='text-light'> Mikolas' Portfolio</h1>
+				<p class='text-light'> A complete collection of my work.</p>
 			</div>
 		</section>
 		<aside id="sidebar">
-			<div>
+			<div class='bg-dark text-light float-right col-4 pt-4 mt-4'>
 				<h3> News: </h3>
 				<p> I just started my web apps class.</p>
 			</div>
 		</aside>
-		<section id="section-home">
+		<section id="section-home" class='bg-danger p-1'>
+			<div class='container fluid'>
 			<h1> Welcome </h1>
 			<hr>
 			<p>
 				This is my portfolio landing page. From here you can navigate to all of my works.
 			</p>
+			</div>
 		</section>
-		<section id="section-about">
+		<section id="section-about" class='bg-primary'>
+			<div class='container fluid'>
 			<h1> About </h1>
 			<hr>
-			<div>
-				<img src='images/pfp.jpg'>
+			<div class='row'>
+			<div class="col-lg-2 col-sm-4">
+				<img src='images/pfp.jpg' class='img-fluid'>
 			</div>
-			<div>
+			<div class="col-lg-10 col-sm-8">
 				<h4> Mikolas Slama </h4>
 				<p> I am a student at the University of New Orleans. My major is Computer Science and my minor is Mathematics </p>
 			</div>
-			<table>
+			</div>
+			<table class='table mt-4'>
 				<thead>
 					<tr>
-						<th colspan='2'> Technical Skills </th>
+						<th colspan='2' class='text-center'> Technical Skills </th>
 					</tr>
 				</thead>
 				<tbody>
@@ -70,66 +116,88 @@
 					</tr>
 				</tbody>
 			</table>
+			</div>
 		</section>
-		<section id="section-projects">
+		<section id="section-projects" class='bg-success container-fluid'>
+			<div class='container fluid'>
 			<h1> Projects </h1>
 			<hr>
 			<p> Here you can see all my completed projects. </p>
-			<div>
-				<div id="projects">
-					<a href='#' target="_blank">
-						<div>
+			<div class='container'>
+				<div id="projects" class='card-deck text center'>
+					<a class='card bg-dark btn' href='#' target="_blank">
+						<div class='card-header'>
 							<p> Project </p>
 						</div>
-						<img src='images/project.png'>
-						<div>
-							<h4> Project Name Goes Here </h4>
+						<img class='card-img-top' src='images/project.png'>
+						<div class='card-body'>
+							<h4 class='card-title text-light'> Project Name Goes Here </h4>
 						</div>
-						<div>
-							<small> by Mikolas Slama </small>
+						<div class='card-footer'>
+							<small class='text-muted'> by Mikolas Slama </small>
 						</div>
 					</a>
 				</div>
 			</div>
+			<div class='container'>
+				<div id="projects" class='card-deck text center'>
+					<a class='card bg-dark btn' href='#' target="_blank">
+						<div class='card-header'>
+							<p> Project </p>
+						</div>
+						<img class='card-img-top' src='images/project.png'>
+						<div class='card-body'>
+							<h4 class='card-title text-light'> Project Name Goes Here </h4>
+						</div>
+						<div class='card-footer'>
+							<small class='text-muted'> by Mikolas Slama </small>
+						</div>
+					</a>
+				</div>
+			</div>
+			</div>
 		</section>
-		<section id="section-blog">
+		<section id="section-blog" class='bg-warning container-fluid'>
 			<h1> Blog </h1>
 			<hr>
 			<p> Blog About Stuff </p>
 			<hr>
-			<article>
+			<article class='container'>
 				<h3> AI: Future or Fad? </h3>
 				<small> Posted by Mikolas Slama on TBD </small>
 				<p> Summary </p>
-				<a href="post.html"> Read More </a>
+				<a class='btn btn-outline-dark'href="post.html"> Read More </a>
 				<hr>
 			</article>
 		</section>
-		<section id="section-contact">
+		<section id="section-contact" class='bg-secondary container-fluid'>
 			<h1> Contact </h1>
 			<hr>
-			<h4> Send Message </h4>
+			<h4 class='text-center'> Send Message </h4>
 			<form>
-				<div>
-					<input type="text" id="name" placeholder="Your Name">
+				<div class='form-group'>
+					<input class='form-control' type="text" id="name" placeholder="Your Name">
 				</div>
-				<div>
-					<input type="email" id="email" placeholder="Your Email">
+				<div class='form-group'>
+					<input class='form-control' type="email" id="email" placeholder="Your Email">
 				</div>
-				<div>
-					<input type="subject" id="subject" placeholder="Subject">
+				<div class='form-group'>
+					<input class='form-control' type="subject" id="subject" placeholder="Subject">
 				</div>
-				<div>
-					<textarea rows="4" id="message" placeholder="Message">
+				<div class='form-group'>
+					<textarea class='form-group' rows="4" id="message" placeholder="Message">
 					</textarea>
 				</div>
-				<button type="submit"> Submit </button>
+				<button class='btn btn-lg btn-primary' type="submit"> Submit </button>
 			</form>
 		</section>
-		<footer>
-			<div>
+		<footer class='bg-light'>
+			<div class='container text-muted text-center'>
 				<p> Copyright &copy; 2020 Mikolas Slama </p>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	</body>
 </html>

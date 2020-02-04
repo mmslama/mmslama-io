@@ -1,0 +1,71 @@
+#accordion {
+    bottom: 0;
+    width: 100%;    
+}
+
+.panel-default > .panel-heading{
+    background: #292b2c;
+}
+
+.panel-heading {
+    padding: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-title a {
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: Helvetica,Arial,sans-serif;
+    outline: none;
+}
+
+.panel-title a:hover, .panel-title a:focus, .panel-title a:active {
+    text-decoration: none;
+    outline: none;
+} 
+
+	#headf{
+	font-family: 'Open Sans Condensed', sans-serif;
+	}
+	
+	#bullet1{
+	list-style-type: none;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	}
+	
+	#parallax-image{
+	background-image: url("../images/manp.jpg");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+	#parallax-image2{
+	background-image: url("../images/mana.jpg");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+	#parallax-image3{
+	background-image: url("../images/manf.jpg");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}

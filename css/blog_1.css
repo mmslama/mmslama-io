@@ -8,6 +8,7 @@
 }
 
 .panel-heading {
+    height: 25px;
     padding: 0;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -18,12 +19,13 @@
 }
 
 .panel-title a {
+	height: 25px;
     color: #FFFFFF;
     text-align: center;
     width: 100%;
     display: block;
-    padding: 10px 15px;
-    font-size: 24px;
+    padding: 6px;
+    font-size: 15px;
     font-family: Helvetica,Arial,sans-serif;
     outline: none;
 }
@@ -32,6 +34,12 @@
     text-decoration: none;
     outline: none;
 } 
+
+.panel-body{
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
 
 	#headf{
 	font-family: 'Open Sans Condensed', sans-serif;

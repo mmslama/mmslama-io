@@ -1,0 +1,55 @@
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+	max-height : 600px;
+}
+.carousel{
+	background-size: cover;
+}
+#mode{
+	cursor: pointer;
+	border: 10px;
+	color: black;
+	background-color: #FFD700;
+}
+#aboutSection{
+	background-image: url("../images/sky1.jpg");
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#cloudFontH{
+  color: black;
+  font-size: 40px;
+  font-family: 'Space Mono' ;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#cloudFontT{
+  color: black;
+  font-size: 20px;
+  font-family: 'Space Mono' ;
+  -webkit-text-fill-color: black; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#titleCard{
+	height: 600px;
+	position: absolute;
+}
+
+#craft{
+	height: 80px;
+	width: 100px;
+}
+
+#home{
+	width: 100%;
+}

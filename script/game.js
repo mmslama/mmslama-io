@@ -1,5 +1,5 @@
 let circle = document.querySelector('#craft');
-let moveBy = 10;
+let moveBy = 1;
 
 let imgArray = new Array();
 
@@ -25,24 +25,24 @@ window.addEventListener('load', () =>{
 	circle.style.top = 0;
 })
 
-window.addEventListener('keydown', (e) =>{
-	switch(e.key){
-		case 'a' :
-			circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
-			break;
-		
-		case 'd' :
-			circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
-			break;
-		
-		case 'w' :
-			circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
-			break;
-		
-		case 's' :
-			circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
-			break;
-	}
-})
+const wasd = new Set();
 
+window.addEventListener('keyup', e => wasd.delete(e.key))
+window.addEventListener('keydown', e => wasd.add(e.key))
+
+const move = function(){
+		if(wasd.has('a'))
+			circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
+		
+		if(wasd.has('d'))
+			circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
+		
+		if(wasd.has('w'))
+			circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
+		
+		if(wasd.has('s'))
+			circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
+}
+
+window.setInterval(move, 1);
 

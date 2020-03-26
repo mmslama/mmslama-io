@@ -1,0 +1,13 @@
+Mikolas Slama HW2
+
+JavaScript: 
+	Little sprite that can move about the webpage with the WASD keys.
+	Button that changes that paralax background bellow the carousel. 
+Bootstrap/CSS:
+	Paralax background.
+	Carousel.
+	Text which uses stroke to create an outline effect.
+	And much more! 
+	
+Website:
+	https://mmslama.github.io/mmslama-io/

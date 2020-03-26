@@ -2,11 +2,37 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-	max-height : 600px;
+
 }
+
+.carousel-inner > .item > img {
+  max-height:60%;
+}
+
+
 .carousel{
 	background-size: cover;
+	height: 60%;
+	max-height: 60%;
+	width: 100%;
 }
+
+.carousel-control-prev{
+	height: 200%;
+}
+
+.carousel-control-next{
+	height: 200%;
+}
+
+.carousel-indicators{
+	top: 150%;
+}
+
+.carousel-caption{
+	height: 50%;
+}
+
 #mode{
 	cursor: pointer;
 	border: 10px;

@@ -3,11 +3,11 @@ let moveBy = 1;
 
 let imgArray = new Array();
 
-imgArray[0] = 'images/sky1.jpg';
+imgArray[0] = 'images/index/sky1.jpg';
 
-imgArray[1] = 'images/sky2.jpg';
+imgArray[1] = 'images/index/sky2.jpg';
 
-imgArray[2] = 'images/sky3.jpg';
+imgArray[2] = 'images/index/sky3.jpg';
 
 var i = 0;
 

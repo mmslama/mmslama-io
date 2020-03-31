@@ -1,3 +1,7 @@
+a, a:hover {
+	color: white;
+}
+
 .carousel-inner{
     position: relative;
     width: 100%;
@@ -40,7 +44,7 @@
 	background-color: #FFD700;
 }
 #aboutSection{
-	background-image: url("../images/sky1.jpg");
+	background-image: url("../images/index/sky1.jpg");
 	height: auto;
 	background-attachment: fixed;
 	background-position: center;

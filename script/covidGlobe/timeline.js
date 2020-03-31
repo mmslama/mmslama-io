@@ -1,6 +1,6 @@
 const showOptions = function(dateArray){
 	let timeline = document.getElementById('timeline');
-	for(let i = 0; i < dateArray.length; i++){
+	for(let i = dateArray.length - 1; i > -1; i--){
 		let option = document.createElement('option');
 		option.text = dateArray[i];
 		timeline.appendChild(option);

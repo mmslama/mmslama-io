@@ -1,14 +1,19 @@
 const showOptions = function(dateArray){
-	let dateList = document.getElementById('timeline');
-	let option = document.createElement('option');
+	let timeline = document.getElementById('timeline');
 	for(let i = 0; i < dateArray.length; i++){
+		let option = document.createElement('option');
 		option.text = dateArray[i];
-		dateList.appendChild(option);
+		timeline.appendChild(option);
 	}
 }
+
 const changeDate = function(){
 	let date = document.getElementById('timeline');
-	date.addEventListener("change", () => console.log("changed"));
-	//drawGlobe(date.selected);
+	date.addEventListener("change", () => drawGlobe(getDay(date)));
+}
+
+const getDay = function(timeline){
+	const selected = [...timeline.selectedOptions][0];
+	return selected.innerText;
 }
 changeDate();

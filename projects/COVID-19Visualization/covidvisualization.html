@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>COVID-19 Active Cases</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link href='../../css/covidGlobe/globe.css' rel="stylesheet" type="text/css">
 		<!-- Load plotly.js into the DOM -->
@@ -12,18 +13,24 @@
 		<nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
 			<a class='navbar-brand' href="../index.html"><strong> Home </strong></a>
 		</nav>
-	
-		<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
-
-		<div class='dateSelection'>
-			<label for="timeline">Choose a date from your previous visit:</label>
-			<select id="timeline">
-			</select>
+		<div class='row m-0'>
+			<div class='dateSelection col-3'>
+				<label class='titleText' for="timeline">Choose a date from your previous visit:</label>
+				<select id="timeline">
+				</select>
+			</div>
+			<div class='globe col-9'>
+				<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+			</div>
+		</div>
+		<div>
+			<h1 class='titleText'>COVID-19 Globular Visualization of Active Cases</h1>
 		</div>
 
-		<script src='../../script/covidGlobe/timeline.js'></script>
+
 		<script src='../../script/covidGlobe/countries.js'></script>
 		<script src='../../script/covidGlobe/globeData.js'></script>
+		<script src='../../script/covidGlobe/timeline.js'></script>
 		<script src='../../script/covidGlobe/drawGlobe.js'></script>
 	</body>
 </html>

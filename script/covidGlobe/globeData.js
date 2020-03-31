@@ -1,7 +1,7 @@
 const results = [];
 const names = [];
 const active_cases = [];
-const dateList = [];
+let dateList = [];
 
 const forEachCountry = async function(array, index = 0){
 	if(array.length <= index){

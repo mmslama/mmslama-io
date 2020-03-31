@@ -8,6 +8,10 @@ const drawGlobe = function(date) {
 		text: names,
 		zmin: 0,
 		zmax: 30000,
+		colorbar:{
+			title: 'Active Cases',
+			ticktextcolor: 'white'
+		},
 		colorscale:[
 				[0, 'rgb(207, 245, 252)'],
 				[0.1, 'rgb(255, 225, 0)'], [0.5, 'rgb(255, 157, 0)'],
@@ -17,7 +21,9 @@ const drawGlobe = function(date) {
 
 	const layout = {
 		height: window.innerHeight*0.9,
-		width: window.innerWidth,
+		width: window.innerWidth*0.5,
+			plot_bgcolor: 'black',
+			paper_bgcolor: 'black',
 		geo: {
 			projection: {
 				type: 'orthographic',
@@ -26,8 +32,9 @@ const drawGlobe = function(date) {
 					lat: 40
 				},
 			},
+			bgcolor: 'black',
 			showocean: true,
-			oceancolor: 'rgb(0, 0, 0)',
+			oceancolor: 'rgb(3, 127, 252)',
 			showland: true,
 			landcolor: 'rgb(255, 255, 255)',
 			showlakes: true,
@@ -43,18 +50,32 @@ const drawGlobe = function(date) {
 			}
 		}
 	};
-Plotly.newPlot("myDiv", data, layout, {showLink: false});
+Plotly.newPlot("myDiv", data, layout, {displayModeBar: false}, {showLink: false} );
+whiteText();
 }
 
 const initCurrentData = async function(){
 	const currentDate = (new Date()).toDateString();
+	if(localStorage.getItem("dateList")){
+	dateList = JSON.parse(localStorage.getItem('dateList'));
+	}
 	if( !!!localStorage.getItem(currentDate)){
 		dateList.push(currentDate);
 		localStorage.setItem('dateList', JSON.stringify(dateList));
-		console.log("entered local storage");
 		await main();
 	}
 	showOptions(JSON.parse(localStorage.getItem('dateList')));
 	drawGlobe(currentDate);
+}
+
+const whiteText = function(){
+	const colorTitle = document.querySelector('.cbtitle');
+	colorTitle.children[0].style.fill = 'white';
+	const colorBarAxis = document.querySelector('.cbaxis');
+	const ticks = [...colorBarAxis.children];
+	for(let tick of ticks){
+		let text = [...tick.children][0];
+		text.style.fill = 'white';
+	}
 }
 initCurrentData();

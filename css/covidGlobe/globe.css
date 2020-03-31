@@ -1,7 +1,23 @@
-.dateSelection{
+body{
+	background-color: rgb(0, 0, 0);
+}
+.dateSelection:before{
+	height: 30%;
+	content: "";
+	display: block;
 	text-align: center;
 }
-#myDiv{
-	min-height: 100%;
-	max-width: 100%;
+.globe{
+	background-color: rgb(0, 0, 0);
+	min-height: 70%;
+	max-width: 70%;
+}
+
+.titleText{
+	text-align: center;
+	color: white;
+}
+
+.cbaxis text{
+	fill: 'white' !important; 
 }

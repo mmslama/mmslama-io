@@ -21,7 +21,7 @@ const getCountryData = async function (){
 		fillDataArrays(data);
 	}
 	catch(e){
-		console.log('Error: ',code);
+		console.log('Error: Failed to Load Country Data');
 	}
 }
 

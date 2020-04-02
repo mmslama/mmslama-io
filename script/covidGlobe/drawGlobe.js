@@ -62,7 +62,7 @@ const initCurrentData = async function(){
 	if( !!!localStorage.getItem(currentDate)){
 		dateList.push(currentDate);
 		localStorage.setItem('dateList', JSON.stringify(dateList));
-		await main();
+		await getCountryData();
 	}
 	showOptions(JSON.parse(localStorage.getItem('dateList')));
 	drawGlobe(currentDate);

@@ -17,7 +17,13 @@ document.querySelector('#mode').addEventListener('click', () =>{
 	document.querySelector('#aboutSection').style.backgroundImage = "url('" + imgArray[i] + "')";
 })
 
-
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
 
 window.addEventListener('load', () =>{
 	circle.style.position = 'relative';

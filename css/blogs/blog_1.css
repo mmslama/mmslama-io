@@ -52,7 +52,7 @@
 	}
 	
 	#parallax-image{
-	background-image: url("../images/manp.jpg");
+	background-image: url("../../images/blog/manp.jpg");
 	height: 650px;
 	background-attachment: fixed;
 	background-position: center;
@@ -61,7 +61,7 @@
 	}
 	
 	#parallax-image2{
-	background-image: url("../images/mana.jpg");
+	background-image: url("../../images/blog/mana.jpg");
 	height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -70,7 +70,7 @@
 	}
 	
 	#parallax-image3{
-	background-image: url("../images/manf.jpg");
+	background-image: url("../../images/blog/manf.jpg");
 	height: 650px;
 	background-attachment: fixed;
 	background-position: center;

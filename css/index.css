@@ -37,6 +37,14 @@ a, a:hover {
 	height: 50%;
 }
 
+.btnmail{
+	background: none!important;
+	border: none;
+	padding: 0!important;
+	color: #069;
+	cursor: pointer;
+}
+
 #mode{
 	cursor: pointer;
 	border: 10px;

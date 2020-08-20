@@ -1,0 +1,8 @@
+Mikolas Slama - Data Visualization Project 
+
+My web application allows used to view the number of active cases in individual countries. This data is represented by a 3D globe.
+I used local storage to save the state of the globe each day a user would visit. This allows the user to view the globe from 
+previous visits. 
+
+Link: 
+https://mmslama.github.io/mmslama-io/projects/COVID-19Visualization/covidvisualization.html

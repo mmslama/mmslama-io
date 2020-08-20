@@ -1,0 +1,17 @@
+body{
+	background-image: url("./images/island.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.register{
+	background-color: #06d157;
+	border: 3px solid black;
+	border-radius: 25px;
+	width: 120%;
+	text-align: center;
+}
+.wrap{
+	position: absolute;
+	top: 45%;
+	left: 40%;
+}
